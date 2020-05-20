@@ -6,11 +6,11 @@ app = Flask(__name__)
 # your code here!
 @app.route("/")
 def hello():
-	return render_template("index.template.html")
+    return render_template("index.template.html")
 	
 @app.route("/",methods=['POST'])
 def processHello():
-	return render_template('process-hello.template.html')
+    return render_template('process-hello.template.html')
 
 
 # "magic code" -- boilerplate

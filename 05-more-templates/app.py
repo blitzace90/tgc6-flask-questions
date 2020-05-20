@@ -2,13 +2,15 @@ from flask import Flask, render_template, request, redirect, url_for
 import os
 
 app = Flask(__name__)
+
+# your code here!
 @app.route('/')
-def index():
+def home():
     return render_template('index.template.html')
 
-@app.route('/gallery')
-def gallery():
-    return render_template('gallery.template.html')
+@app.route('/products')
+def product():
+    return render_template('product.template.html')
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
